@@ -1,3 +1,5 @@
+English | [日本語](README.ja.md)
+
 # ellipgrid
 
 **Exact GRS80/WGS84 ellipsoidal geodesics, authalic polygon manifolds, and topologically exact JIS X 0410 / Hilbert spatial covering in Rust.**
@@ -45,13 +47,13 @@ Auxiliary latitudes:
   (coefficients derived symbolically from the exact definition; agreement $\lesssim 10^{-18}$ rad in
   extended precision, dominated only by the `f64` `asin` rounding of the reference path), and the
   exact $q$-definition $\sin\xi = q(\varphi)/q(\tfrac{\pi}{2})$ with
-  $q(\varphi) = (1-e^2)\left[\tfrac{\sin\varphi}{1-e^2\sin^2\varphi} + \tfrac{\operatorname{atanh}(e\sin\varphi)}{e}\right]$
+  $q(\varphi) = (1-e^2)\left[\tfrac{\sin\varphi}{1-e^2\sin^2\varphi} + \tfrac{\mathrm{atanh}(e\sin\varphi)}{e}\right]$
   refined by Newton iteration,
-* **Isometric** $\psi(\varphi) = \operatorname{atanh}(\sin\varphi) - e\,\operatorname{atanh}(e\sin\varphi)$
+* **Isometric** $\psi(\varphi) = \mathrm{atanh}(\sin\varphi) - e\,\mathrm{atanh}(e\sin\varphi)$
   (loxodromes are straight in the $(\lambda,\psi)$ plane),
 * **Meridian arc** $m(\varphi)$ (Snyder 3-21, 6th order in $e^2$) with Newton inversion.
 
-The authalic radius squared $R_A^2 = \tfrac{a^2}{2}\big(1 + \tfrac{1-e^2}{e}\operatorname{atanh} e\big)$
+The authalic radius squared $R_A^2 = \tfrac{a^2}{2}\big(1 + \tfrac{1-e^2}{e}\mathrm{atanh} e\big)$
 is the total-area scale: $4\pi R_A^2$ equals the ellipsoid surface area exactly (verified analytically
 and numerically in the test suite).
 
