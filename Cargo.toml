@@ -1,0 +1,17 @@
+[package]
+name = "ellipgrid"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+description = "Exact GRS80/WGS84 ellipsoidal geodesics, authalic polygon manifolds, and topologically exact JIS X 0410 / Hilbert spatial covering in Rust"
+license = "MIT"
+keywords = ["geodesic", "geodesy", "grs80", "wgs84", "japanese-mesh"]
+categories = ["science::geo", "algorithms"]
+
+[dependencies]
+# Intentionally empty: this crate is dependency-minimal by design.
+
+[dev-dependencies]
+
+[profile.test]
+opt-level = 2
